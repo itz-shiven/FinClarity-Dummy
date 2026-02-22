@@ -51,20 +51,7 @@ nav ul li a{
      font-weight: 400 ;
 } 
 
-.login-btn{
-   text-decoration: none;
-    color: #ffffff;
-    margin-right: 15px;
-    /* font-weight: 400; */
-    padding: 10px 40px;         /* top/bottom 10px, left/right 40px → elongated shape */
-    background:#246fbf;
-    border:none;
-    outline: #246fbf;
-    border-radius: 12.5px;        /* fully rounded edges */
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
+
 .login{
     text-decoration: none;
     color: #ffffff;
@@ -87,6 +74,43 @@ nav ul li a{
               0 0 27px #4667dd;
     transform: scale(1.07);     /* slight grow on hover */
 }
+.login-btn{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+
+    padding: 10px 40px;
+    
+    /* subtle dark grey background (visible on pitch black) */
+    background: rgba(255,255,255,0.05);
+
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    border-radius: 12.5px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* soft shadow always visible */
+    box-shadow:
+        0 0 6px rgba(255,255,255,0.08),
+        inset 0 0 8px rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(6px); /* glass effect */
+
+    transition: all 0.3s ease;
+}
+.login-btn:hover {
+    background: #2556c9;
+    border-color: #2556c9;
+
+    box-shadow:
+        0 0 10px #2556c9,
+        0 0 20px #2556c9,
+        0 0 35px #2556c9;
+
+    transform: scale(1.07);
+}
 
 
 .content{
@@ -107,9 +131,9 @@ nav ul li a{
 }
 .feature-img{
     position: absolute;
-    width: 500px;
-    bottom: 35%;
-    right: 15%;
+    width: 575px;
+    bottom: 30%;
+    right: 12.5%;
     
 }
 

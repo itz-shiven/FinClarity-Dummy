@@ -1,9 +1,9 @@
 // SETTINGS
-var radius = 240;
+var radius = 250;
 var autoRotate = true;
 var rotateSpeed = -60;
-var imgWidth = 120;
-var imgHeight = 170;
+var imgWidth = 175;
+var imgHeight = 250;
 
 var bgMusicURL = null; // add music link if needed
 var bgMusicControls = true;
