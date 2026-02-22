@@ -12,7 +12,7 @@ html, body {
 body {
   overflow: hidden;
   display: flex;
-  background: #000000;
+  background: #000000fd;
   perspective: 1000px;
   transform-style: preserve-3d;
   
@@ -50,28 +50,47 @@ nav ul li a{
     color: #ffffff;
      font-weight: 400 ;
 } 
-.login{
-    text-decoration: none;
+
+.login-btn{
+   text-decoration: none;
     color: #ffffff;
     margin-right: 15px;
-    font-weight: 400;
-}
-.btn {
+    /* font-weight: 400; */
     padding: 10px 40px;         /* top/bottom 10px, left/right 40px → elongated shape */
-    background-color: #246fbf;  /* blue background */
-    color: white;
-    border: none;
+    background:#246fbf;
+    border:none;
+    outline: #246fbf;
     border-radius: 12.5px;        /* fully rounded edges */
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
-btn:hover {
-    background-color: #41454a;  /* darker blue on hover */
-    transform: scale(1.05);     /* slight grow on hover */
+.login{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+    /* font-weight: 400; */
+    padding: 10px 40px;         /* top/bottom 10px, left/right 40px → elongated shape */
+    background:transparent;
+    border:2px solid #246fbf;
+    outline: #246fbf;
+    border-radius: 12.5px;        /* fully rounded edges */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+.login:hover {
+    background-color: #4388d1;  /* darker blue on hover */
+    box-shadow: 0 0 9px #4667dd,
+              0 0 18px #4667dd,
+              0 0 27px #4667dd;
+    transform: scale(1.07);     /* slight grow on hover */
+}
+
+
 .content{
-    margin-top: 10%;
+    margin-top: 16.5%;
     max-width: 600px;
     
 }
@@ -117,7 +136,7 @@ btn:hover {
 
 #drag-container p {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  color: ;
+
   position: absolute;
   top: 100%;
   left: 50%;
