@@ -6,6 +6,7 @@
 html, body {
   height: 100%;
   touch-action: none;
+  
 }
 
 body {
@@ -14,6 +15,8 @@ body {
   background: #000000;
   perspective: 1000px;
   transform-style: preserve-3d;
+  
+
 }
 
 .hero{
@@ -25,6 +28,8 @@ body {
     padding: 10px 10%;
     overflow: hidden;
     position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
 }
 nav{
     padding : 10px 0;
@@ -51,7 +56,20 @@ nav ul li a{
     margin-right: 15px;
     font-weight: 400;
 }
-
+.btn {
+    padding: 10px 40px;         /* top/bottom 10px, left/right 40px → elongated shape */
+    background-color: #246fbf;  /* blue background */
+    color: white;
+    border: none;
+    border-radius: 12.5px;        /* fully rounded edges */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+btn:hover {
+    background-color: #41454a;  /* darker blue on hover */
+    transform: scale(1.05);     /* slight grow on hover */
+}
 .content{
     margin-top: 10%;
     max-width: 600px;
@@ -59,7 +77,7 @@ nav ul li a{
 }
 .content h1{
     font-size: 70px;
-    color:#ffffff;
+    color:hsla(0, 0%, 100%, 0.897);
 
 }
 .content p{
@@ -72,7 +90,7 @@ nav ul li a{
     position: absolute;
     width: 500px;
     bottom: 35%;
-    right: 10%;
+    right: 15%;
     
 }
 
@@ -98,7 +116,8 @@ nav ul li a{
 }
 
 #drag-container p {
-  font-family: serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: ;
   position: absolute;
   top: 100%;
   left: 50%;
