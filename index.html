@@ -10,7 +10,7 @@
 <body>
     <div class="hero">
         <nav>
-            <img src="Images/Logo3.0.png" class="logo ">
+            <img src="Images/Hero/Logo3.0.png" class="logo ">
             <ul>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Working</a></li>
@@ -18,7 +18,7 @@
             </ul>
             <div>
                 
-                <button class="login" id="login">Login</button>
+                <button class="login" id="login" onclick="goToLogin()">Login</button>
                 
 
 
@@ -32,11 +32,11 @@
         <div id="drag-container">
             <div id="spin-container">
 
-                <img src="Images/Bank.png">
-                <img src="Images/Credit Card.png">
-                <img src="Images/Bitcoin.png">
-                <img src="Images/T&C.png">
-                <img src="Images/loan.png">
+                <img src="Images/Hero/Bank.png">
+                <img src="Images/Hero/Credit Card.png">
+                <img src="Images/Hero/Bitcoin.png">
+                <img src="Images/Hero/T&C.png">
+                <img src="Images/Hero/loan.png">
                 
 
 
@@ -51,6 +51,14 @@
         <div id="music-container"></div>
 
         <script src="script.js"></script>
+        </div>
+<script src="script.js"></script>
+
+<script>
+function goToLogin(){
+  window.location.href = "login.html";
+}
+</script>
 </body>
 
 </html>
